@@ -1,0 +1,82 @@
+/* style page */
+
+.body {
+    padding: 20px 50px;
+}
+
+.form {
+
+    width: 800px;
+
+}
+
+/* margin classes */
+
+.mt5 {
+    margin-bottom: 30px !important;
+}
+
+.mt10 {
+    margin-bottom: 30px !important;
+}
+
+.mt20 {
+    margin-bottom: 30px !important;
+}
+
+.mt30 {
+    margin-bottom: 30px !important;
+}
+
+.mt40 {
+    margin-bottom: 30px !important;
+}
+
+.mt50 {
+    margin-bottom: 30px !important;
+}
+
+.mt60 {
+    margin-bottom: 30px !important;
+}
+
+.mt70 {
+    margin-bottom: 30px !important;
+}
+
+.mt80 {
+    margin-bottom: 30px !important;
+}
+
+.mt90 {
+    margin-bottom: 30px !important;
+}
+
+.mt100 {
+    margin-bottom: 30px !important;
+}
+
+/* end of margin classes */
+
+.button {
+    /* height: 30px; */
+    width: 80px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    border: none;
+    border-radius: 5%;
+
+}
+
+a :hover {
+    background-color: orange !important;
+}
+
+.box-form {
+    width: 350px !important;
+}
