@@ -95,8 +95,8 @@
                             <th></th>
                             <th></th>
                             <th></th>
-                            <th scope="row">Soma final:</th>
-                            <td class="total_final"></td>
+                            <th scope="row">resultado: <span class="grandtotal"></span></th>
+                            <td id="grandtotal" class="total_final" ></td>
                         </tr>
                     </tfoot>
                 </table>
@@ -117,15 +117,17 @@
             const inputEl = document.querySelector(".produto")
 
             // função de soma
-            function calculaSomaFinal(){
+            function calculaTotal() {
 
-                var soma_final = 0;
-                $(".soma").each(function(){
-                    soma_final += parseInt($(this).html());
-                    $(".total_final").html(soma_final);
+                var grandtotal = 0;
+
+                $("table.hightlight").find('td[class^="linetotal"]').each(function () {
+                    grandtotal += +$(this).val();
                 });
 
-            };
+                $("#grandtotal").text(grandtotal.toFixed(2));
+
+            }
 
             function adicionaCotacao(e) {
 
@@ -153,7 +155,7 @@
                         <td>${unidade}</td>
                         <td>${valor_unitario}</td>
                         <td>${qtde}</td>
-                        <td class="soma_unidade">${retorno_final}</td>
+                        <td class="soma_unidade linetotal">${retorno_final}</td>
                         <td><button class="delete waves-effect waves-light btn grey darken-4">delete</button></td>
                         <td><button class="edit waves-effect waves-light btn grey darken-4" >edit</button></td>
                     </tr>
@@ -161,7 +163,7 @@
                 `
 
                 // chama a função de soma
-                calculaSomaFinal()
+                calculaTotal();
 
                 formEl.reset();
 
