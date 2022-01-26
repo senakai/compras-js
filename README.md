@@ -1,2 +1,2 @@
 # compras-js
-budgetary webb app 
+budgetary web app 
